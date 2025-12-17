@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharosDev | Creamos, Guiamos, Desarrollamos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div class="cursor"></div>
+
+    <!-- Navegación -->
+    <nav>
+        <a href="#" class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 5L23 15H17L20 5Z" fill="url(#grad1)"/>
+                    <rect x="17" y="15" width="6" height="15" fill="#ffffff"/>
+                    <rect x="17" y="18" width="6" height="3" fill="#00d4aa"/>
+                    <rect x="17" y="24" width="6" height="3" fill="#00d4aa"/>
+                    <path d="M14 30H26L28 35H12L14 30Z" fill="#1a2a3a"/>
+                    <circle cx="20" cy="10" r="3" fill="#00d4aa">
+                        <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                    <defs>
+                        <linearGradient id="grad1" x1="20" y1="5" x2="20" y2="15">
+                            <stop offset="0%" stop-color="#00d4aa"/>
+                            <stop offset="100%" stop-color="#0f2847"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            PharosDev
+        </a>
+        <ul class="nav-links">
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button class="nav-cta" onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">
+            Cotiza tu proyecto
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="stars" id="stars"></div>
+        <div class="ocean-bg">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+
+        <div class="hero-content">
+            <span class="hero-badge">Desarrollo web en Culiacán</span>
+            <h1>Tu negocio merece una <span class="highlight">presencia digital</span> que impresione</h1>
+            <p>Diseñamos y desarrollamos sitios web a la medida que guían a tus clientes hacia ti. Soluciones claras, seguras y que realmente funcionan.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-primary">
+                    Inicia tu proyecto
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#servicios" class="btn-secondary">
+                    Ver servicios
+                </a>
+            </div>
+        </div>
+
+        <div class="lighthouse-container">
+            <div class="lighthouse">
+                <div class="lighthouse-beam"></div>
+                <div class="lighthouse-structure">
+                    <div class="lighthouse-top"></div>
+                    <div class="lighthouse-body">
+                        <div class="lighthouse-stripe"></div>
+                        <div class="lighthouse-stripe"></div>
+                        <div class="lighthouse-stripe"></div>
+                    </div>
+                    <div class="lighthouse-base"></div>
+                    <div class="rocks">
+                        <div class="rock"></div>
+                        <div class="rock"></div>
+                        <div class="rock"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="services" id="servicios">
+        <div class="section-header reveal">
+            <span class="section-tag">Servicios</span>
+            <h2>Soluciones web que impulsan tu negocio</h2>
+            <p>Desde una landing page hasta sistemas complejos, creamos exactamente lo que necesitas para destacar en el mundo digital.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <div class="service-icon">🚀</div>
+                <h3>Landing Pages</h3>
+                <p>Páginas de aterrizaje diseñadas para convertir visitantes en clientes. Perfectas para campañas y lanzamientos.</p>
+                <ul class="service-features">
+                    <li>Diseño enfocado en conversión</li>
+                    <li>Optimizada para móviles</li>
+                    <li>Carga ultrarrápida</li>
+                </ul>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon">🏢</div>
+                <h3>Páginas Institucionales</h3>
+                <p>Tu imagen corporativa profesional en internet. Muestra quién eres y genera confianza desde el primer clic.</p>
+                <ul class="service-features">
+                    <li>Múltiples secciones</li>
+                    <li>SEO optimizado</li>
+                    <li>Administrable</li>
+                </ul>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon">🛒</div>
+                <h3>E-commerce</h3>
+                <p>Tiendas en línea completas para vender tus productos 24/7. Integración con métodos de pago locales.</p>
+                <ul class="service-features">
+                    <li>Carrito de compras</li>
+                    <li>Pasarelas de pago</li>
+                    <li>Gestión de inventario</li>
+                </ul>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon">⚙️</div>
+                <h3>Desarrollo a la Medida</h3>
+                <p>Sistemas personalizados que automatizan tu operación. CRMs, dashboards, intranets y más.</p>
+                <ul class="service-features">
+                    <li>Soluciones únicas</li>
+                    <li>Automatización</li>
+                    <li>Integración con APIs</li>
+                </ul>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon">🔧</div>
+                <h3>Mantenimiento</h3>
+                <p>Tu sitio siempre actualizado, seguro y funcionando. Nos encargamos de todo para que tú te enfoques en vender.</p>
+                <ul class="service-features">
+                    <li>Actualizaciones de seguridad</li>
+                    <li>Backups automáticos</li>
+                    <li>Soporte prioritario</li>
+                </ul>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon">🔒</div>
+                <h3>Seguridad Web</h3>
+                <p>Protege tu negocio digital. Implementamos las mejores prácticas de seguridad para tu tranquilidad.</p>
+                <ul class="service-features">
+                    <li>Certificados SSL</li>
+                    <li>Protección contra ataques</li>
+                    <li>Auditorías de seguridad</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso -->
+    <section class="process" id="proceso">
+        <div class="section-header reveal">
+            <span class="section-tag">Proceso</span>
+            <h2>¿Cómo trabajamos?</h2>
+            <p>Un proceso claro y transparente. Sabrás exactamente en qué etapa está tu proyecto en todo momento.</p>
+        </div>
+
+        <div class="process-timeline">
+            <div class="process-step reveal">
+                <div class="process-content">
+                    <h3>Reunión inicial</h3>
+                    <p>Conocemos tu negocio, objetivos y visión. Entendemos qué necesitas para crear la solución perfecta.</p>
+                </div>
+                <div class="process-number">1</div>
+            </div>
+
+            <div class="process-step reveal">
+                <div class="process-content">
+                    <h3>Propuesta y cotización</h3>
+                    <p>Te presentamos una propuesta detallada con tiempos, costos y entregables. Sin sorpresas.</p>
+                </div>
+                <div class="process-number">2</div>
+            </div>
+
+            <div class="process-step reveal">
+                <div class="process-content">
+                    <h3>Diseño UX/UI</h3>
+                    <p>Creamos prototipos y diseños que apruebas antes de desarrollar. Verás tu sitio antes de que exista.</p>
+                </div>
+                <div class="process-number">3</div>
+            </div>
+
+            <div class="process-step reveal">
+                <div class="process-content">
+                    <h3>Desarrollo</h3>
+                    <p>Convertimos el diseño en código. Tecnología moderna, rendimiento optimizado y código limpio.</p>
+                </div>
+                <div class="process-number">4</div>
+            </div>
+
+            <div class="process-step reveal">
+                <div class="process-content">
+                    <h3>Pruebas y lanzamiento</h3>
+                    <p>Probamos todo exhaustivamente. Cuando está perfecto, lanzamos tu sitio al mundo.</p>
+                </div>
+                <div class="process-number">5</div>
+            </div>
+
+            <div class="process-step reveal">
+                <div class="process-content">
+                    <h3>Soporte continuo</h3>
+                    <p>No te dejamos solo. Mantenimiento, actualizaciones y soporte cuando lo necesites.</p>
+                </div>
+                <div class="process-number">6</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section class="about" id="nosotros">
+        <div class="about-container">
+            <div class="about-visual reveal">
+                <div class="about-card">
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <div class="value-icon">💡</div>
+                            <h4>Claridad</h4>
+                            <p>Comunicación transparente</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🚀</div>
+                            <h4>Innovación</h4>
+                            <p>Tecnología actualizada</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🔒</div>
+                            <h4>Seguridad</h4>
+                            <p>Sitios protegidos</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🤝</div>
+                            <h4>Compromiso</h4>
+                            <p>Resultados garantizados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-content reveal">
+                <span class="section-tag">Nosotros</span>
+                <h2>Guiamos tu camino digital</h2>
+                <p>Somos <strong>PharosDev</strong>, una empresa de desarrollo web nacida en Culiacán con visión nacional. Nuestro nombre viene de "Pharos", el legendario faro de Alejandría, porque eso es lo que hacemos: <strong>guiar a negocios hacia su éxito digital</strong>.</p>
+                <p>Combinamos diseño atractivo con desarrollo sólido y seguridad robusta. No solo creamos sitios web bonitos, creamos herramientas que impulsan tu negocio.</p>
+                
+                <div class="founders">
+                    <div class="founder">
+                        <div class="founder-avatar">JG</div>
+                        <div class="founder-info">
+                            <h4>Jesús Adrián Guerra</h4>
+                            <span>Desarrollo & Programación</span>
+                        </div>
+                    </div>
+                    <div class="founder">
+                        <div class="founder-avatar">LT</div>
+                        <div class="founder-info">
+                            <h4>Luis Guillermo Torres</h4>
+                            <span>Gestión & Seguridad</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+        <div class="contact-container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>¿Listo para brillar en internet?</h2>
+                    <p>Cuéntanos sobre tu proyecto. Te respondemos en menos de 24 horas con una propuesta personalizada.</p>
+                    
+                    <div class="contact-methods">
+                        <a href="https://wa.me/526671234567" class="contact-method" target="_blank">
+                            <div class="contact-method-icon">💬</div>
+                            <span>WhatsApp directo</span>
+                        </a>
+                        <a href="mailto:hola@pharosdev.com" class="contact-method">
+                            <div class="contact-method-icon">✉️</div>
+                            <span>hola@pharosdev.com</span>
+                        </a>
+                        <div class="contact-method">
+                            <div class="contact-method-icon">📍</div>
+                            <span>Culiacán, Sinaloa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="¿Qué tipo de proyecto necesitas?">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Cuéntanos más sobre tu idea..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        Enviar mensaje
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 5L23 15H17L20 5Z" fill="#00d4aa"/>
+                    <rect x="17" y="15" width="6" height="15" fill="#ffffff"/>
+                    <rect x="17" y="18" width="6" height="3" fill="#00d4aa"/>
+                    <rect x="17" y="24" width="6" height="3" fill="#00d4aa"/>
+                    <path d="M14 30H26L28 35H12L14 30Z" fill="#1a2a3a"/>
+                </svg>
+                <span>PharosDev</span>
+            </div>
+
+            <div class="footer-links">
+                <a href="#servicios">Servicios</a>
+                <a href="#proceso">Proceso</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="#" class="social-link" title="Instagram">📸</a>
+                <a href="#" class="social-link" title="Facebook">👤</a>
+                <a href="#" class="social-link" title="LinkedIn">💼</a>
+                <a href="#" class="social-link" title="TikTok">🎵</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 PharosDev. Creamos, guiamos, desarrollamos. Hecho con 💚 en Culiacán.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp flotante -->
+    <a href="https://wa.me/526671234567" class="whatsapp-float" target="_blank" title="Escríbenos por WhatsApp">
+        💬
+    </a>
+
+    <script>
+        // Cursor personalizado
+        const cursor = document.querySelector('.cursor');
+        let mouseX = 0, mouseY = 0;
+        let cursorX = 0, cursorY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        function animateCursor() {
+            cursorX += (mouseX - cursorX) * 0.1;
+            cursorY += (mouseY - cursorY) * 0.1;
+            cursor.style.left = cursorX + 'px';
+            cursor.style.top = cursorY + 'px';
+            requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+
+        // Hover en elementos interactivos
+        const interactiveElements = document.querySelectorAll('a, button, .service-card, .value-item');
+        interactiveElements.forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+            el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+        });
+
+        // Generar estrellas
+        const starsContainer = document.getElementById('stars');
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 60 + '%';
+            star.style.animationDelay = Math.random() * 3 + 's';
+            star.style.width = Math.random() * 2 + 1 + 'px';
+            star.style.height = star.style.width;
+            starsContainer.appendChild(star);
+        }
+
+        // Navegación con scroll
+        const nav = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Animaciones al scroll
+        const reveals = document.querySelectorAll('.reveal');
+        const revealOnScroll = () => {
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    el.classList.add('active');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // Ejecutar al cargar
+
+        // Formulario
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Aquí iría la lógica de envío
+            alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
+        });
+
+        // Smooth scroll para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
